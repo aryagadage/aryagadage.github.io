@@ -1,0 +1,57 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: white;
+  color: black;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+nav a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 500;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Intro section */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+.intro img {
+  width: 250px;
+  border-radius: 8px;
+  margin-right: 40px;
+}
+.bio {
+  max-width: 600px;
+}
+.bio a {
+  color: blue;
+}
