@@ -3,19 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV - Arya Gaadage</title>
+  <title>CV - Arya Gadage</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .cv-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    
+    .cv-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .cv-header h1 {
+      margin-bottom: 1rem;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      transition: background-color 0.3s;
+    }
+    
+    .download-btn:hover {
+      background-color: #34495e;
+    }
+    
+    .pdf-viewer {
+      width: 100%;
+      height: 85vh;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    @media (max-width: 768px) {
+      .pdf-viewer {
+        height: 70vh;
+      }
+    }
+  </style>
 </head>
 <body>
-   <nav>
+  <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="teaching.html">Teaching</a></li>
       <li><a href="literature.html">Notes</a></li>
       <li><a href="books.html">Books</a></li>
-       <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
       <li><a href="cv.html" class="active">CV</a></li>
       <li><a href="about.html">Contact</a></li>
     </ul>
   </nav>
+
+  <div class="cv-container">
+    <div class="cv-header">
+      <h1>Curriculum Vitae</h1>
+      <a href="papers/CV.pdf" class="download-btn" download>Download CV (PDF)</a>
+    </div>
+    
+    <embed src="papers/CV.pdf" type="application/pdf" class="pdf-viewer" />
+    
+    <!-- Fallback for browsers that don't support embed -->
+    <noscript>
+      <p style="text-align: center;">
+        Your browser does not support PDF viewing. 
+        <a href="papers/CV.pdf" download>Click here to download the CV</a>
+      </p>
+    </noscript>
+  </div>
+</body>
+</html>
